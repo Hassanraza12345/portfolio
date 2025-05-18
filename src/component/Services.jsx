@@ -32,7 +32,7 @@ const Services = () => {
 
     ]
 
-    console.log(services[0])
+
   return (
     <div className="w-screen h-full mb-3 bg-gray-50">
         <div className="mt-10 text-4xl font-bold text-center">
