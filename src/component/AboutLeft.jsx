@@ -2,34 +2,25 @@ import React from 'react'
 
 export const AboutLeft = () => {
   return (
-    <div className="w-full flex flex-col justify-between text-left">
-      <div className="px-6">
-        <h1 className="text-2xl md:text-3xl font-bold mb-5 mt-6 md:mt-0">Who I AM</h1>
-        <p className="mb-6">
-          I'm a passionate full-stack developer with over 5 years of experience creating robust web applications and intuitive user interfaces.
-        </p>
-        <p>
-          My approach combines technical expertise with creative problem-solving to deliver solutions that exceed client expectations.
-        </p>
-      </div>
+<div className=" py-16 px-6 md:px-20" id="about">
+  <div className="max-w-5xl mx-auto">
+    <h2 className="text-4xl font-bold text-blue-500 mb-8 text-center">About Me</h2>
+    <p className="text-lg leading-relaxed">
+      Hello! I'm <span className=" font-semibold">Muhammad Hassan Raza</span>, a passionate <span className="text-blue-400">AI/ML Engineer</span> and <span className="text-blue-400">Full Stack Developer</span> based in Lahore, Pakistan.
+      I hold a BS in Software Engineering from Lahore Garrison University and have 1+ year of hands-on experience building intelligent, scalable web and machine learning applications.
+    </p>
 
-      <div className="mt-10 px-6">
-        <h1 className="text-2xl md:text-3xl font-bold text-black mb-4">My Experience</h1>
-        <div className="flex flex-col sm:flex-row gap-6">
-          <ul className="list-disc marker:text-blue-500 text-black ml-4 space-y-2">
-            <li>React</li>
-            <li>Tailwind CSS</li>
-            <li>JavaScript</li>
-            <li>Django</li>
-          </ul>
-          <ul className="list-disc marker:text-blue-500 text-black ml-4 space-y-2">
-            <li>REST APIs</li>
-            <li>Python</li>
-            <li>Scrapy</li>
-            <li>BeautifulSoup</li>
-          </ul>
-        </div>
-      </div>
-    </div>
+    <p className="text-lg leading-relaxed mt-6">
+      My expertise lies in Python, Django, React.js, Flask, SQL, and various ML/DL frameworks like PyTorch and TensorFlow.
+      I’ve built solutions like a real-time retail surveillance system using YOLOv8, an email spam detector, and sentiment analysis tools using natural language processing.
+    </p>
+
+    <p className="text-lg leading-relaxed mt-6">
+      I enjoy solving real-world problems through clean code, creative design, and data-driven approaches.
+      Whether it's front-end development or deploying AI models, I strive to deliver high-quality, user-centric solutions.
+    </p>
+  </div>
+</div>
+
   )
 }

@@ -4,6 +4,7 @@ import { About } from './component/About'
 import { Skill } from './component/Skill'
 import Services from './component/Services'
 import { Contect } from './component/Contect'
+import Projects from './component/Projects'
 
 function App() {
 
@@ -26,9 +27,13 @@ function App() {
 
     </div>
     <div>
-    <Contect/>
+    <Projects/>
 
     </div>
+    {/* <div>
+    <Contect/>
+
+    </div> */}
 
 
     </>

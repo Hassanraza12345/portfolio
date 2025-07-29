@@ -2,10 +2,14 @@ import React from 'react';
 
 export const SkillLeft = () => {
   const skill = [
-    { name: 'React (JavaScript)', level: '70' },
-    { name: 'Django (Python)', level: '60' },
-    { name: 'REST API', level: '65' },
-    { name: 'Web Scraping', level: '70' },
+  { name: 'Python', level: 80 },
+  { name: 'JavaScript (React)', level: 70 },
+  { name: 'Django', level: 30 },
+  { name: 'Flask / FastAPI / DRF', level: 30 },
+  { name: 'REST API', level: 25 },
+  { name: 'PyTorch / TensorFlow', level: 60 },
+  { name: 'Scikit-learn / OpenCV', level: 60 },
+  { name: 'Data Visualization (Matplotlib / Seaborn)', level: 65 }
   ];
 
   return (

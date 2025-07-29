@@ -1,15 +1,16 @@
 import React from 'react';
-import { FaReact } from 'react-icons/fa';
-import { SiDjango, SiFastapi, SiJavascript, SiScrapy, SiSelenium } from 'react-icons/si';
+import { FaPython, FaReact,FaBrain  } from 'react-icons/fa';
 import { BsFillCheckCircleFill } from 'react-icons/bs';
-
+import { SiPytorch,SiDjango, SiFastapi, SiTensorflow } from "react-icons/si";
+import { TbBrandGraphql } from "react-icons/tb";
 const mainSkills = [
+{ name: 'Python', icon: <FaPython size={40} /> },
+  { name: 'JavaScript (React)', icon: <FaReact size={40} /> },
   { name: 'Django', icon: <SiDjango size={40} /> },
-  { name: 'Scrapy', icon: <SiScrapy size={40} /> },
-  { name: 'FastAPI', icon: <SiFastapi size={40} /> },
-  { name: 'Selenium', icon: <SiSelenium size={40} /> },
-  { name: 'JavaScript', icon: <SiJavascript size={40} /> },
-  { name: 'React', icon: <FaReact size={40} /> }
+  { name: 'Flask / FastAPI / DRF', icon: <SiFastapi size={40} /> },
+  { name: 'PyTorch / TensorFlow', icon: <><SiPytorch size={40} className='mr-3'/> <SiTensorflow size={40} className='ml-3'/></>  }, // or use SiTensorflow
+  { name: 'Scikit-learn / OpenCV', icon: <FaBrain  size={40} /> }, // could combine with SiOpencv
+  { name: 'Data Visualization', icon: <TbBrandGraphql size={40} /> },
 ];
 
 const additionalSkills = [
@@ -19,6 +20,7 @@ const additionalSkills = [
   'Git/GitHub',
   'CI/CD',
 ];
+const additional_Skills_blob=false
 
 export const SkillRight = () => {
   return (
@@ -32,22 +34,26 @@ export const SkillRight = () => {
             key={index}
             className="bg-[#1f2937] p-4 rounded-lg flex flex-col items-center justify-center shadow-md hover:shadow-blue-500/50 transition duration-300"
           >
-            <div className="text-blue-400 mb-2">{skill.icon}</div>
+            <div className="text-blue-400 mb-2 flex ">{skill.icon}</div>
             <p className="text-sm sm:text-base font-medium text-center">{skill.name}</p>
           </div>
         ))}
       </div>
 
       {/* Additional Skills */}
-      <h2 className="text-2xl font-semibold text-blue-400 mb-4">Additional Skills</h2>
-      <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
-        {additionalSkills.map((skill, index) => (
-          <div key={index} className="flex items-center space-x-2">
-            <BsFillCheckCircleFill className="text-blue-400" />
-            <span className="text-sm sm:text-base">{skill}</span>
+      {additional_Skills_blob &&(
+        <>
+          <h2 className="text-2xl font-semibold text-blue-400 mb-4">Additional Skills</h2>
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
+            {additionalSkills.map((skill, index) => (
+              <div key={index} className="flex items-center space-x-2">
+                <BsFillCheckCircleFill className="text-blue-400" />
+                <span className="text-sm sm:text-base">{skill}</span>
+              </div>
+            ))}
           </div>
-        ))}
-      </div>
+        </>
+      )}
     </div>
   );
 };
