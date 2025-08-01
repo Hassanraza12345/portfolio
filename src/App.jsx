@@ -22,10 +22,10 @@ function App() {
     <Skill/>
 
     </div>
-    <div>
+    {/* <div>
     <Services/>
 
-    </div>
+    </div> */}
     <div>
     <Projects/>
 
